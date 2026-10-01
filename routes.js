@@ -32,17 +32,20 @@ body.push(chunk)
     })  
 } 
 
+
+
    res.setHeader('Context-Type', 'text/html')
    res.write('<html>')
    res.write('<head> <title>welcome to my first course</title> </head>')
-   res.write('<body> <h1>hello dear, how are you doing</h1></body>')
+   res.write('<body> <h1>hello dear, how are you doing </h1></body>')
    res.write('</html>')
+   //return res.end();
  
 }
-module.exports = handleDta
-/* module.exports = {
+//module.exports = handleDta
+ module.exports = {
     handler: handleDta,
     someText: 'hi, i am available'
-} */
+} 
    // module.exports.handler = handleDta;
     //module.exports.someText = 'hi dev'
